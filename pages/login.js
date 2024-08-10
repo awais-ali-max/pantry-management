@@ -115,7 +115,7 @@ const LoginPage = () => {
                     className="signUpButton"
                     onClick={() => router.push('/signup')}
                 >
-                    Don't have an account? <span style={{ color: '#FFD700' }}>Sign Up</span>
+                    Don&apos;t have an account? <span style={{ color: '#FFD700' }}>Sign Up</span>
                 </Button>
             </Box>
         </Box>
