@@ -1,0 +1,193 @@
+/* src/styles/globals.css */
+
+/* General Body Styling */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* Black background for the entire page */
+  color: #FFD700; /* Default text color */
+  background-image: url('/Screenshot_1.png'); /* Background image for the entire page */
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating */
+}
+
+/* Headings and Links Styling */
+h1, h2, h3 {
+  color: #FFD700; /* Default gold color */
+  background: linear-gradient(45deg, #e5b229, #ffd700); /* Darker golden gradient effect for headings */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #FFD700; /* Default gold color */
+  background: linear-gradient(45deg, #e5b229, #ffd700); /* Darker golden gradient effect for links */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container Styling */
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+  background-color: #000000; /* Ensure container background matches the page background */
+}
+
+/* Login Form Container Styling */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('/Screenshot_1.png'); /* Background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent repeating */
+  padding: 2rem;
+}
+
+/* Form Box Styling */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: rgba(0, 0, 0, 0.7); /* Dark transparent background */
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Form Box */
+.login-form:hover {
+  background: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Enhanced shadow on hover */
+}
+
+/* Button Styling */
+.MuiButton-containedPrimary {
+  background: linear-gradient(45deg, #e5b229, #ffd700); /* Darker golden gradient effect for contained buttons */
+  color: #000000; /* Shiny black for text in contained buttons */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.MuiButton-containedPrimary:hover {
+  background: linear-gradient(45deg, #ffd700, #e5b229); /* Slight change in gradient on hover */
+  color: #000000; /* Shiny black for text */
+}
+
+.MuiButton-textPrimary {
+  color: #FFD700; /* Shiny gold for text buttons */
+  background: linear-gradient(45deg, #e5b229, #ffd700); /* Darker golden gradient effect for text buttons */
+}
+
+.MuiButton-textPrimary:hover {
+  color: #e5b229; /* Slightly darker gold on hover */
+  background: linear-gradient(45deg, #ffd700, #e5b229); /* Slight change in gradient on hover */
+}
+
+/* Sign Up and Login Button Styling */
+.signUpButton, .loginButton {
+  color: #FFD700; /* Shiny gold for text color */
+  font-weight: bold;
+  background: transparent; /* No background for text button */
+  border: none; /* Remove border */
+  padding: 0.5rem 1rem; /* Padding for better appearance */
+  text-transform: none; /* Prevent uppercase transformation */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.signUpButton:hover, .loginButton:hover {
+  color: #e5b229; /* Slightly darker gold on hover */
+  text-decoration: underline; /* Underline on hover */
+  background: none; /* Ensure no background on hover */
+}
+
+/* Add Item Form Styling */
+.addItemForm {
+  width: 100%;
+  max-width: 600px;
+  background-color: #1C1C1C; /* Dark grey for the form background */
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin-bottom: 2rem; /* Space below the form */
+}
+
+.addItemForm h2 {
+  color: #FFD700; /* Shiny gold for form headings */
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.addItemForm .MuiTextField-root {
+  margin-bottom: 1.5rem; /* Spacing between input fields */
+  width: 100%;
+}
+
+.addItemForm .MuiInputBase-input {
+  color: #FFD700; /* Gold text color for input fields */
+}
+
+.addItemForm .MuiOutlinedInput-root {
+  &.Mui-focused fieldset {
+    border-color: #FFD700; /* Gold border color when focused */
+  }
+  fieldset {
+    border-color: #5A5A5A; /* Subtle grey border color */
+  }
+}
+
+.addItemForm .MuiFormLabel-root {
+  color: #5A5A5A; /* Subtle grey color for labels */
+}
+
+.addItemForm .MuiFormLabel-root.Mui-focused {
+  color: #FFD700; /* Gold color for focused labels */
+}
+
+.addItemForm .MuiButton-contained {
+  background: linear-gradient(45deg, #e5b229, #ffd700); /* Darker golden gradient for button */
+  color: #000000; /* Black text for button */
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+.addItemForm .MuiButton-contained:hover {
+  background: linear-gradient(45deg, #ffd700, #e5b229); /* Slight change on hover */
+}
+
+.addItemForm .MuiButton-text {
+  color: #FFD700; /* Gold text for text button */
+  transition: color 0.3s ease;
+}
+
+.addItemForm .MuiButton-text:hover {
+  color: #e5b229; /* Slightly darker gold on hover */
+}
+
+.addItemForm .MuiCircularProgress-root {
+  color: #FFD700; /* Gold color for loading spinner */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .addItemForm {
+    padding: 1rem;
+  }
+}
