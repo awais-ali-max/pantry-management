@@ -211,6 +211,7 @@ const Dashboard = () => {
                                         edge="end"
                                         aria-label="edit"
                                         onClick={() => handleEditClick(item)}
+                                        style={{ color: 'white' }}  // Set the color to white
                                     >
                                         <EditIcon />
                                     </IconButton>
@@ -218,6 +219,7 @@ const Dashboard = () => {
                                         edge="end"
                                         aria-label="delete"
                                         onClick={() => deleteItem(item.id)}
+                                        style={{ color: 'white' }}  // Set the color to white
                                     >
                                         <DeleteIcon />
                                     </IconButton>
@@ -227,11 +229,22 @@ const Dashboard = () => {
                             <ListItemText
                                 primary={item.name}
                                 secondary={`Quantity: ${item.quantity}, Type: ${item.type}`}
+                                sx={{
+                                    color: 'white',
+                                    '& .MuiListItemText-primary': {
+                                        color: 'white',
+                                    },
+                                    '& .MuiListItemText-secondary': {
+                                        color: 'white',
+                                    }
+                                }}
                             />
+
                         </ListItem>
-                    ))}
-                </List>
-            </Box>
+                    ))
+                    }
+                </List >
+            </Box >
 
             <Dialog
                 open={dialogOpen}
@@ -406,12 +419,14 @@ const Dashboard = () => {
                 </DialogActions>
             </Dialog>
 
-            {loading && (
-                <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
-                    <CircularProgress />
-                </Box>
-            )}
-        </Box>
+            {
+                loading && (
+                    <Box sx={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
+                        <CircularProgress />
+                    </Box>
+                )
+            }
+        </Box >
     );
 };
 
